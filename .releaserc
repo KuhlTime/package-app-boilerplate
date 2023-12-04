@@ -17,17 +17,6 @@
         "npmPublish": false
       }
     ],
-    [
-      "@saithodev/semantic-release-backmerge",
-      {
-        "backmergeBranches": [
-          {
-            "from": "main",
-            "to": "test"
-          }
-        ]
-      }
-    ],
     "@semantic-release/github",
     "@semantic-release/npm"
   ]
