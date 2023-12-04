@@ -7,8 +7,8 @@
   "types": "./dist/package/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/package/index.cjs",
-      "require": "./dist/package/index.mjs"
+      "import": "./dist/package/index.mjs",
+      "require": "./dist/package/index.cjs"
     },
     "./package.json": "./package.json"
   },
