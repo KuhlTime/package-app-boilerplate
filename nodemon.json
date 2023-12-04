@@ -1,0 +1,8 @@
+{
+  "watch": ["src/app"],
+  "ext": "ts",
+  "execMap": {
+    "ts": "node --no-warnings --loader ts-node/esm -r tsconfig-paths/register src/app/index.ts"
+  },
+  "ignore": ["src/app/**/*.spec.ts"]
+}

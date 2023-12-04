@@ -16,7 +16,7 @@
     "./dist/package"
   ],
   "scripts": {
-    "dev": "node --no-warnings --loader ts-node/esm src/app/index.ts",
+    "dev": "nodemon",
     "start": "node dist/app/index.mjs",
     "build": "unbuild",
     "release": "semantic-release --debug"
@@ -54,10 +54,12 @@
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20.10.3",
     "esbuild": "^0.19.8",
+    "nodemon": "^3.0.2",
     "prettier": "^3.1.0",
     "prettier-plugin-jsdoc": "^1.1.1",
     "semantic-release": "^22.0.8",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.2",
     "unbuild": "^2.0.0"
   }
