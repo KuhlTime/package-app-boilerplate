@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@kuhltime/package-app-boilerplate':
-    specifier: ^1.1.1
-    version: 1.1.1
+    specifier: ^1.1.2
+    version: 1.1.2
 
 devDependencies:
   '@types/node':
@@ -45,8 +45,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@kuhltime/package-app-boilerplate@1.1.1:
-    resolution: {integrity: sha512-/AhHn+TAjoszwnSwcheGc5N3UWvyGcK1j+QioYvPntTTb/0FZ4NHLzDGsihQxmC/UrPKMIAesNzHAE0d1XIaMw==, tarball: https://npm.pkg.github.com/download/@kuhltime/package-app-boilerplate/1.1.1/0d6ed8d851fbefd266299fe5eb667ff575145013}
+  /@kuhltime/package-app-boilerplate@1.1.2:
+    resolution: {integrity: sha512-cXyfHC0Mjf1JDAp0vGPGi0vZZdueuSBv5n0l2hKj2In/94c2f7HaOnA50GQFqTSLEWd6oJfxEnx8yJZohm5KBQ==, tarball: https://npm.pkg.github.com/download/@kuhltime/package-app-boilerplate/1.1.2/f618002b7e8597c5d7c743a529ad0629e38aed57}
     engines: {node: '>=18', pnpm: '>=8'}
     dependencies:
       chalk: 5.3.0

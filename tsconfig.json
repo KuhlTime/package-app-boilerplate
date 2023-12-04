@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist",
     "module": "ESNext",
     "target": "ES2017",
@@ -13,7 +14,14 @@
     "noImplicitAny": false,
     "skipLibCheck": false,
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@/*": ["./app/*"],
+      "@app/*": ["./app/*"],
+      "@package/*": ["./package/*"],
+      "@shared/*": ["./shared/*"]
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

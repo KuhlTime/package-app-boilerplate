@@ -1,5 +1,5 @@
 import express from 'express'
-import { HealthResponse } from '../models/health-response.model'
+import { HealthResponse } from '@shared/health-response.model'
 
 const app = express()
 

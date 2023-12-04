@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { HealthResponse } from '../models/health-response.model'
+import { HealthResponse } from '@shared/health-response.model'
 
 /** The options for the APIService. */
 interface APIServiceOptions {

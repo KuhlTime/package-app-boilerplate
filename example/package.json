@@ -11,7 +11,7 @@
   "author": "André Kuhlmann",
   "license": "MIT",
   "dependencies": {
-    "@kuhltime/package-app-boilerplate": "^1.1.1"
+    "@kuhltime/package-app-boilerplate": "^1.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.10.3",
