@@ -1,0 +1,20 @@
+# Based on:
+# - https://github.com/aws/jsii/blob/main/.prettierrc.yaml
+
+---
+plugins:
+  - prettier-plugin-jsdoc
+arrowParens: avoid
+bracketSpacing: true
+printWidth: 120
+semi: false
+singleQuote: true
+tabWidth: 2
+trailingComma: none
+importOrder:
+  - <THIRD_PARTY_MODULES>
+  - ^@/(.*)$
+  - ^[./]
+importOrderSeparation: true
+importOrderSortSpecifiers: true
+jsdocSingleLineComment: false
