@@ -1,4 +1,5 @@
 import chalk from 'chalk'
+import { HealthResponse } from '../models/health-response.model'
 
 /** The options for the APIService. */
 interface APIServiceOptions {
@@ -19,7 +20,7 @@ class APIService {
    *
    * @returns The health object from the API.
    */
-  async getHealth(): Promise<{ success: boolean; message: string }> {
+  async getHealth(): Promise<HealthResponse> {
     console.log(chalk.blue('Making request to backend...'))
     const res = await fetch(`${this.baseUrl}/health`)
     console.log(chalk.blue('Got response from backend.'))

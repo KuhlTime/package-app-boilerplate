@@ -1,4 +1,5 @@
 import express from 'express'
+import { HealthResponse } from '../models/health-response.model'
 
 const app = express()
 
@@ -10,11 +11,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/health', (req, res) => {
-  res.send({
+  const memoryUsageInMb = process.memoryUsage().rss / 1024 / 1024
+  const healthResponse: HealthResponse = {
     success: true,
-    // Return the current ram usage of the process.
-    message: `Memory usage: ${process.memoryUsage().rss / 1024 / 1024} MB`
-  })
+    memoryUsageInMb,
+    message: `Memory usage: ${memoryUsageInMb} MB`
+  }
+
+  res.send(healthResponse)
 })
 
 app.listen(3000, () => {
