@@ -10,7 +10,7 @@ interface APIServiceOptions {
 class APIService {
   private baseUrl: string
 
-  constructor(options) {
+  constructor(options: APIServiceOptions) {
     this.baseUrl = options.baseUrl
   }
 
