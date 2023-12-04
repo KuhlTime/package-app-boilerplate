@@ -9,6 +9,14 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/health', (req, res) => {
+  res.send({
+    success: true,
+    // Return the current ram usage of the process.
+    message: `Memory usage: ${process.memoryUsage().rss / 1024 / 1024} MB`
+  })
+})
+
 app.listen(3000, () => {
   console.log('Listening on port 3000')
 })
