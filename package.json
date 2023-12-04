@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "start": "node dist/app/index.mjs",
-    "build": "unbuild"
+    "build": "unbuild",
+    "release": "semantic-release --debug"
   },
   "keywords": [],
   "author": "André Kuhlmann",
@@ -42,11 +43,19 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@saithodev/semantic-release-backmerge": "^4.0.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.4",
+    "@semantic-release/npm": "^11.0.1",
+    "@semantic-release/release-notes-generator": "^12.1.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20.10.3",
     "esbuild": "^0.19.8",
     "prettier": "^3.1.0",
     "prettier-plugin-jsdoc": "^1.1.1",
+    "semantic-release": "^22.0.8",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2",
     "unbuild": "^2.0.0"
